@@ -11,7 +11,7 @@ public class GhostChase : GhostBehavior
     {
         Node node = other.GetComponent<Node>();
    
-        if (node != null && enabled && !ghost.frightened.enabled)
+        if (node != null && this.enabled && !ghost.frightened.enabled)
         {
             Vector2 direction = Vector2.zero;
             float minDistance = float.MaxValue;
